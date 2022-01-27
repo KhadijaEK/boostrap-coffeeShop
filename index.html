@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosy! Coffee-house</title>
+    <meta name="description" content="Exercice Restaurant in Bootstrap - This is Fresh-oh! Coffee-house where you can
+    relax and enjoy your meal with our delicious home-made brew coffees & fresh juices">
+    <meta name="author" content="Student at Becode.org">
+     <!-- Font awesome icon link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Bootstrap core CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!-- Custom styles -->
+     <link href="style.css" rel="stylesheet">
+     
+ 
+    </head>
+
+    <body class="d-flex flex-sm-column flex-md-row text-center bg-black">
+      <main class="container min-vw-100 d-flex mx-auto flex-column ">
+        <section class="parallax-home row d-flex flex-column align-items-center p-3">   
+        <!-- Navigation -->
+        <header class="mb-auto"> 
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img width="144" height="auto" class="d-none d-md-block d-lg-none align-baseline" src="/images/logo/freshoh-logo-white.png" alt="Freshoh logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse text-sm  justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link" href="#menu">Menu</a>
+                  <a class="nav-link" href="#aboutus">About us</a>
+                  <a class="nav-link" href="#gallery">Gallery</a>
+                  <a class="nav-link" href="#contact">Contact</a>
+              
+                </div>  
+              </div>
+            </div>
+          </nav>
+        </header>
+                  <div class="container-fluid overflow-hidden p-4">
+                    <img class="logo" src="images/logo/freshoh-logo-3.png" alt="Freshoh logo">
+                    <h1 class="cover-heading text-white">Fresh coffee for afresh morning.</h1>
+                    <a class="btn btn-primary btn-outline-light bg-transparent btn-sm btn-lg " href="#menu">Check Menu</a>
+                      <div class="text-center pt-4">
+                        
+                              <!--Facebook-->
+                              <a class="btn-floating btn-sm btn-lg btn-fb" type="button" role="button" href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                              <!--Twitter-->
+                              <a class="btn-floating btn-sm btn-lg btn-tw" type="button" role="button" href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a>
+                              <!--Instagram-->
+                              <a class="btn-floating btn-sm btn-lg btn-ins" type="button" role="button" href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram "></i></a>
+                      </div>
+                  </div>    
+                  
+          </section>
+          <!-- Navigation & Home page -->
+          <!-- Menu-->
+          <section id="menu" class="parallax-menu row d-flex flex-column flex-lg-column">
+            <h2 class="fw-light text-center text-white-50 text-lg-start mt-4 mb-0">Menu</h2>
+            <hr class="mt-1 text-white-50">
+
+            <div class="container-fluid overflow-hidden p-4">
+              <div class="row justify-content-center ">
+                
+                <div class="col-sm-12 col-lg-3 ">
+                  <div class="p-3">
+                    <img class="image-icon" src="/images/menu/coffee.png" alt="hot coffee icon">
+                  </div>
+                    <ul class="list-group  ">
+                      <li class="list-group-item bg-transparent d-flex justify-content-between text-left">Americano                      
+                        <span class="badge">3,15€</span>
+                      </li>
+                      <li class="list-group-item bg-transparent d-flex justify-content-between">Espresso                      
+                        <span class="badge">2,65€</span>
+                      </li>
+                      <li class="list-group-item bg-transparent d-flex justify-content-between ">Double Espresso                      
+                        <span class="badge">3,45€</span>
+                      </li>
+                      <li class="list-group-item bg-transparent d-flex justify-content-between ">Cappuccino                      
+                        <span class="badge">3,45€</span>
+                      </li>
+                      <li class="list-group-item bg-transparent d-flex justify-content-between ">Latte                      
+                        <span class="badge">3,95€</span>
+                      </li>
+                      <li class="list-group-item bg-transparent d-flex justify-content-between ">Macchiato                      
+                        <span class="badge">4,90€</span>
+                      </li>
+                      <li class="list-group-item bg-transparent d-flex justify-content-between ">Tea (Kusmi)                   
+                        <span class="badge">2,40€</span>
+                      </li>
+                    </ul>
+                   
+                      
+                </div>
+                <div class="col-sm-12 col-lg-3 ">
+                  <div class="p-3">
+                    <img class="image-icon" src="/images/menu/breakfast.png" alt="iced coffee icon">
+                  </div>
+                    <ul class="list-group">
+                      <li class="list-group-item bg-transparent d-flex justify-content-between">Steel cut Oatmeal                      
+                        <span class="badge">3,75€</span>
+                      </li>
+                      <li class="list-group-item bg-transparent d-flex justify-content-between">Yogurt with fruits                      
+                        <span class="badge">2,65€</span>
+                      </li>
+                      <li class="list-group-item bg-transparent d-flex justify-content-between ">Egg & cheese sandwich                      
+                        <span class="badge">5,00€</span>
+                      </li>
+                      <li class="list-group-item bg-transparent d-flex justify-content-between ">Smoked salmon bagel                      
+                        <span class="badge">7,00€</span>
+                      </li>
+                      <li class="list-group-item bg-transparent d-flex justify-content-between ">Banana pancakes                      
+                        <span class="badge">5,95€</span>
+                      </li>
+                      <li class="list-group-item bg-transparent d-flex justify-content-between ">Cookies                      
+                        <span class="badge">1,90€</span>
+                      </li>
+                      <li class="list-group-item bg-transparent d-flex justify-content-between ">Croissant                      
+                        <span class="badge">1,20€</span>
+                      </li>
+                    </ul>
+                  
+                </div>
+                <div class="col-sm-12 col-lg-3 ">
+                  <div class="p-3">
+                    <img class="image-icon" src="/images/menu/frappe.png" alt="iced coffee icon">
+                  </div>
+                    <ul class="list-group  ">
+                      <li class="list-group-item bg-transparent d-flex justify-content-between">Iced Coffee                      
+                        <span class="badge">3,15€</span>
+                      </li>
+                      <li class="list-group-item bg-transparent d-flex justify-content-between">Iced Tea                      
+                        <span class="badge">2,45€</span>
+                      </li>
+                      <li class="list-group-item bg-transparent d-flex justify-content-between ">Iced Latte                      
+                        <span class="badge">3,45€</span>
+                      </li>
+                      <li class="list-group-item bg-transparent d-flex justify-content-between ">Iced Moccha                      
+                        <span class="badge">3,45€</span>
+                      </li>
+                      <li class="list-group-item bg-transparent d-flex justify-content-between ">Iced Chaï Latte                      
+                        <span class="badge">3,95€</span>
+                      </li>
+                      <li class="list-group-item bg-transparent d-flex justify-content-between ">Apple cider                      
+                        <span class="badge">4,90€</span>
+                      </li>
+                      <li class="list-group-item bg-transparent d-flex justify-content-between ">Lemonade                      
+                        <span class="badge">4,40€</span>
+                      </li>
+                    </ul>
+                    
+                  </div>
+
+                 
+                </div>
+            </div>
+            
+           
+             
+            </div>
+          </section>
+          <!-- ./ Menu-->
+          <!--About us-->
+          <section id="aboutus" class="parallax-aboutus row d-flex flex-sm-row flex-lg-column">
+           
+            <h2 class="fw-light text-left text-white-50 text-lg-start mt-4 mb-0">About us</h2>
+            <hr class="mt-1 text-white-50">
+
+            <div class="row d-flex flex-row mx-auto">
+              <div class="col-sm-12 col-md-6 mb-5 mt-lg-5 ">
+                <h6 class="cover-heading text-white p-2">Learn more about coffee, our culture & how we freshly roast & brew</h6>
+                <a class="btn btn-primary btn-outline-light bg-transparent btn-sm btn-lg" href="/culture.html" >Learn more</a>
+              </div> 
+              <div class="col-md-6 d-none d-md-inline">
+                <img class="img-fluid  mt-sm-5" src="/images/culture/fairtradecoffee.jpg" alt="Tree coffee">
+              </div>
+            </div>
+          </section>
+          <div class="row text-white box-open-hours d-flex flex-column flex-lg-column mx-auto col-sm-12 col-md-6 col-lg-4 mt-sm-6 mt-md-4 p-4">
+              <h3>Open hours</h3>
+              <ul class="list-group">
+                <li class="list-group-item bg-transparent d-flex justify-content-between">Monday - Tuesday                      
+                  <span class="badge">9.00 to 18.30</span>
+                </li>
+                <li class="list-group-item bg-transparent d-flex justify-content-between">Friday                      
+                  <span class="badge">9.00 to 16.30</span>
+                </li>
+                <li class="list-group-item bg-transparent d-flex justify-content-between ">Saturday & Sunday                     
+                  <span class="badge">8.00 to 14.30</span>
+                </li>
+              </ul>
+           
+          </div>
+          <!--Opening hours-->
+          <!--./Opening hours-->
+          
+          
+          <!--./ About us-->
+          
+          <!-- Gallery-->
+          <section id="gallery" class="parallax-gallery row d-flex flex-column mb-0 align-items-center">
+             
+            <h2 class="fw-light text-left text-white-50 text-lg-start mt-4 mb-0">Gallery</h2>
+            <hr class="mt-1 text-white-50">
+
+            <!-- Gallery -->
+<div class="row">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img
+      src="/images/menu/bagel.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+    />
+
+    <img
+      src="/images/menu/coffee_cappuccino_pink.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Wintry Mountain Landscape"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="/images/menu/egg.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Mountains in the Clouds"
+    />
+
+    <img
+      src="/images/menu/coffee_ice_creamy_soft_milk.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="/images/menu/oatmeal.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Waves at Sea"
+    />
+
+    <img
+      src="/images/menu/angele-kamp-bjR73p7zIPw-unsplash.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Yosemite National Park"
+    />
+  </div>
+</div>
+<!-- Gallery -->
+            <!-- ./ Gallery-->
+          </section>
+            <!--./ Gallery-->
+          <!-- Contact page -->
+          <section id="contact" class="parallax-contact row d-flex flex-column align-items-center">
+            <h2 class="fw-light text-center text-white-50 text-lg-start mt-4 mb-0">Contact us</h2>
+            <hr class="mt-1 text-white">
+            
+            <!--Section: Contact v.1-->
+            <div class="row">
+              <div class="col-lg-12">
+
+                <br>
+                <!--Buttons-->
+                <div class="row text-center text-white pb-4 contact-background">
+                  <div class="col-md-4 opacity-100">
+                    <a class="btn-floating blue accent-1 opacity-100"><i class="fas fa-map-marker-alt"></i></a>
+                    <p class="opacity-100">Paris, 75000</p>
+                    <p>France</p>
+                  </div>
+
+                  <div class="col-md-4">
+                    <a class="btn-floating blue accent-1"><i class="fas fa-phone"></i></a>
+                    <p>+ 33 230 567 89</p>
+                    <p>Mon - Fri, 8:00-22:00</p>
+                  </div>
+
+                  <div class="col-md-4">
+                    <a class="btn-floating blue accent-1"><i class="fas fa-envelope"></i></a>
+                    <p>info@gmail.com</p>
+                    <p>sale@gmail.com</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+              <footer class="bg-dark text-white text-center text-md-start">
+                <!-- Grid container -->
+                <div class="container p-2">
+                  <!--Grid row-->
+                  <div class="row">
+                  
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                      <h5 class="text-uppercase ">Info</h5>
+            
+                      <ul class="list-unstyled mb-0">
+                        <li>
+                          <a href="#!" class="text-white text-decoration-none fs-6">Our company</a>
+                        </li>
+                        <li>
+                          <a href="#!" class="text-white text-decoration-none">Terms & conditions</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                      <h5 class="text-uppercase mb-0">Social</h5>
+            
+                      <ul class="list-unstyled  text-white">
+                        <li>
+                          <a href="#!" class="text-white text-decoration-none">Instagram</a>
+                        </li>
+                        <li>
+                          <a href="#!" class="text-white text-decoration-none">Facebook</a>
+                        </li>
+                        <li>
+                          <a href="#!" class="text-white text-decoration-none">Twitter</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row-->
+                </div>
+                <!-- Grid container -->
+            
+                <!-- Copyright -->
+                <p class="text-center bg-dark p-3">
+                  © 2022 Copyright: Khadija EK
+                </p>
+                <!-- Copyright -->
+              </footer>
+              <!-- Footer -->
+          </section>
+           <!-- Contact page -->
+          <!-- Footer -->
+        </main>            
+    
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    </body>
+</html>

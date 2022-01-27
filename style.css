@@ -1,0 +1,275 @@
+/* Colors: primary: #5FB5A9  ; secondary (brown) #693721 ; accent color #9EFFF2 ou #00C4B5; darkgreen: #2C6960  charcoal grey: #292b33*/
+
+/* Common */
+
+
+html { 
+    font-size: calc(1em + 1vw);
+    box-sizing: content-box;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+[class*="fa-"] {color: #e7e7e7; margin-right: 15px;}
+[class*="fa-"]:hover {color: #5FB5A9;}
+
+.bg-black{
+    background-color: #000;
+}
+
+
+p{
+    font-size: 13px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+button:focus{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+/* Navbar & Logo */
+.logo{
+    width: 70%;
+}
+
+.icon-bar{
+    color: #5FB5A9 !important;
+}
+
+.navbar-nav{
+    font-size: 0.7em;  
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+
+.btn-outline-light{border: 2px solid 00C4B5;}
+
+.btn-outline-light:hover{border-color: #f7b92a; background-color: f7b92a; color: #f7b92a;
+      }
+
+/* Home page Banner */
+
+.parallax-home {
+      background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/welcome/karl-fredrickson-TYIzeCiZ_60-unsplash.jpg);   
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      background-blend-mode: darken;
+}
+
+.cover-heading{
+    font-size: 34px ;
+    padding: 0.5em ;
+}
+
+
+
+/* Menu Page Group-list & Badges*/
+
+.parallax-menu {
+    background: url('/images/menu/menu-background.png');
+    background-color: #110905;
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    
+}
+
+.image-icon{
+    width: 20%;
+}
+
+.list-group-item{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: whitesmoke;
+    border: none;
+    font-weight: 100;
+    
+}
+
+.badge {
+    color: white;
+    vertical-align: middle;
+    font-weight: 100;
+}
+
+
+/* About us / Culture Page --> Carousel*/
+.parallax-aboutus{
+    background-color: rgb(0, 0, 0);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 70vw;
+    margin-bottom: -300px;
+}
+
+.box-open-hours{
+   background-color: rgb(0, 0, 0, 0.2) ; 
+    border: solid 2px #ba9c60;
+
+    position: relative;
+    z-index: 2;
+    transform: translate(45%, -60px); 
+}
+
+@media only screen and (max-width: 450px) {
+    .box-open-hours{
+        width: 100%;
+        transform: translate(0px, 0px);
+        margin-top: 1em;
+    }
+    .parallax-aboutus{
+        height: 100%;
+        margin-bottom: 0px;
+        
+    }
+}
+
+/* TABLET VERSION  */
+@media only screen and (max-width: 991.98px) {
+    .box-open-hours{
+        transform: translate(0px, 0px);
+        
+    }
+    .parallax-aboutus{
+        height: 100%;
+        margin-bottom: 0px;
+        
+    }
+  }
+
+
+
+
+/* Menu Page gallery */
+
+.parallax-gallery {
+ 
+    background-blend-mode: saturation;
+    background-color: black; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
+}
+
+
+/* Contact page */
+
+.parallax-contact {
+    background-image: url(images/welcome/matt-hoffman-7zwyUZVrt-U-unsplash.jpg);  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75%;
+   
+}
+
+.contact-background{
+    background-color: rgba(119, 119, 120, 0.3);
+}
+
+#contactpage .wrapper {
+    background-image: url(images/culture/coffeebar_workingspace.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 24px;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+
+#contactpage .mb-4 {
+    background-color: rgba(119, 119, 120, 0.8);
+    border-radius: 25px;
+    margin: 50px;
+    padding: 50px;
+    position: relative;
+    top: 20px;
+    width: 100%; 
+}
+
+
+.label {
+    font-size: 14px;
+    margin-bottom: 10px;
+    }
+
+.custom-select{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 34px;
+    margin-bottom: 34px;
+    width: 100%;
+}
+
+
+
+
+#contactpage .btn:hover{
+    background-color: #00A4D0;
+    border: 5px solid white;
+}
+
+#contactpage .list-unstyled li{
+    color: black;
+}
+
+
+/* Footer */
+
+.fs-13{
+    font-size: 13px;
+}
+
+.page-footer{
+ 
+    width: 100%;
+
+}
+
+footer .row{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.footer p{
+   height: 1em;
+   line-height: 30em;
+}
+
+
+#footer-img{
+    display: flex;
+    width: 20%;
+}
+
+.list-unstyled li i{
+    padding-left: 20px;
+    padding-right: 15px;
+}
+
+
+#footer .fa {
+    font-size: 12px;
+
+}
+
+
+
