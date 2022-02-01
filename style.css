@@ -1,4 +1,28 @@
-/* Colors: primary: #5FB5A9  ; secondary (brown) #693721 ; accent color #9EFFF2 ou #00C4B5; darkgreen: #2C6960  charcoal grey: #292b33*/
+/* Colors: 
+/* CSS HEX 
+--light-slate-gray: #7a8b99ff;
+--white: #ffffffff;
+--camel: #ba9c60ff;
+--raisin-black: #232528ff;
+--rich-black-fogra-29: #071013ff;
+
+
+/* SCSS RGB 
+$light-slate-gray: rgba(122, 139, 153, 1);
+$white: rgba(255, 255, 255, 1);
+$camel: rgba(186, 156, 96, 1);
+$raisin-black: rgba(35, 37, 40, 1);
+$rich-black-fogra-29: rgba(7, 16, 19, 1);
+
+/* colors variables */
+:root{
+    --light-slate-gray: #7a8b99ff;
+    --white: #ffffffff;
+    --camel: #ba9c60ff;
+    --raisin-black: #232528ff;
+    --rich-black-fogra-29: #071013ff;
+    
+}
 
 /* Common */
 
@@ -7,14 +31,16 @@ html {
     font-size: calc(1em + 1vw);
     box-sizing: content-box;
     height: 100vh;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     
 }
-[class*="fa-"] {color: #e7e7e7; margin-right: 15px;}
-[class*="fa-"]:hover {color: #5FB5A9;}
 
 .bg-black{
-    background-color: #000;
+    background-color: var(--rich-black-fogra-29);
+}
+
+.text-gold{
+    color: var(--camel);  
 }
 
 
@@ -22,21 +48,33 @@ p{
     font-size: 13px;
     margin-bottom: 0px;
     font-weight: bold;
+    color: var(--light-slate-gray);
 }
 
+/* buttons */
 button:focus{
     outline:0px !important;
     -webkit-appearance:none;
     box-shadow: none !important;
 }
-/* Navbar & Logo */
-.logo{
-    width: 70%;
+
+.btn-primary{
+    background-color: var(--camel);
+    border: none;
+}
+.btn-primary:hover{
+    background-color: var(--camel);
+    border: none;
 }
 
-.icon-bar{
-    color: #5FB5A9 !important;
+.btn-outline-light{border: 2px solid var(--white);}
+
+.btn-outline-light:hover{border-color: var(--camel); background-color: var(--camel); color: var(--white);}
+/* Navbar */
+.logo{
+    width: 60%;
 }
+
 
 .navbar-nav{
     font-size: 0.7em;  
@@ -47,15 +85,10 @@ button:focus{
 }
 
 
-.btn-outline-light{border: 2px solid 00C4B5;}
-
-.btn-outline-light:hover{border-color: #f7b92a; background-color: f7b92a; color: #f7b92a;
-      }
-
 /* Home page Banner */
 
 .parallax-home {
-      background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/welcome/karl-fredrickson-TYIzeCiZ_60-unsplash.jpg);   
+      background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9) ), url(images/welcome/karl-fredrickson-TYIzeCiZ_60-unsplash.jpg);   
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
@@ -69,13 +102,15 @@ button:focus{
     padding: 0.5em ;
 }
 
+[class*="fa-"] {color: var(--white); margin-right: 15px;}
+[class*="fa-"]:hover {color: var(--camel);}
 
 
 /* Menu Page Group-list & Badges*/
 
 .parallax-menu {
-    background: url('/images/menu/menu-background.png');
-    background-color: #110905;
+    background: url('/images/menu/menu-background-coffee.png');
+    background-color: var(--raisin-black);
     background-attachment: fixed;
     background-position: left;
     background-repeat: no-repeat;
@@ -89,16 +124,16 @@ button:focus{
 }
 
 .list-group-item{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
     font-size: 18px;
-    color: whitesmoke;
+    color: var(--white);
     border: none;
     font-weight: 100;
     
 }
 
 .badge {
-    color: white;
+    color: var(--white);
     vertical-align: middle;
     font-weight: 100;
 }
@@ -106,7 +141,7 @@ button:focus{
 
 /* About us / Culture Page --> Carousel*/
 .parallax-aboutus{
-    background-color: rgb(0, 0, 0);
+    background-color: var(--rich-black-fogra-29);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -117,14 +152,20 @@ button:focus{
 
 .box-open-hours{
    background-color: rgb(0, 0, 0, 0.2) ; 
-    border: solid 2px #ba9c60;
+    border: solid 2px var(--camel);
 
     position: relative;
     z-index: 2;
     transform: translate(45%, -60px); 
 }
 
+/* Responsive */
+
 @media only screen and (max-width: 450px) {
+    
+    .logo{
+        width: 100%;
+    }
     .box-open-hours{
         width: 100%;
         transform: translate(0px, 0px);
@@ -158,7 +199,7 @@ button:focus{
 .parallax-gallery {
  
     background-blend-mode: saturation;
-    background-color: black; 
+    background-color: var(--rich-black-fogra-29);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -181,7 +222,7 @@ button:focus{
 }
 
 .contact-background{
-    background-color: rgba(119, 119, 120, 0.3);
+    background-color: var(--raisin-black);
 }
 
 #contactpage .wrapper {
@@ -266,10 +307,7 @@ footer .row{
 }
 
 
-#footer .fa {
-    font-size: 12px;
 
-}
 
 
 
