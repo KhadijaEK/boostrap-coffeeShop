@@ -3,310 +3,240 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Our Culture</title>
-
-        <meta name="description" content="Exercice Restaurant in Bootstrap - This is Fresh-oh! Salad-bar & Coffee-house's service and philosophy">
+        <title>Cosy! Coffee-house</title>
+        <meta name="description" content="Exercice Restaurant in Bootstrap - This is Fresh-oh! Coffee-house where you can
+        relax and enjoy your meal with our delicious home-made brew coffees & fresh juices">
         <meta name="author" content="Student at Becode.org">
         <!-- Font awesome icon link -->
-        <script src="https://kit.fontawesome.com/1c8661e552.js" crossorigin="anonymous"></script>
-        <!-- Bootstrap core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+          <!-- Bootstrap core CSS & JS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-        <!-- Custom styles for this template -->
+        <!-- Custom styles -->
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Brawler&display=swap" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
-
-         <!--Navbar--> 
-            <!-- navbar-fixed-top-->
-            <nav class="navbar navbar-inverse">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a href="#" class="navbar-brand">Fresh-oh!</a>
-                </div>
-                <!-- Collection of nav links, forms, and other content for toggling -->
-                <div id="navbarCollapse" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="menu.html">Menu</a></li>
-                         <li class="active"><a href="culture.html">Culture</a></li>
-                                <li><a href="locateus.html">Find your Fresh-oh!</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <!--/ navbar-fixed-top-->
-    <!--/.Navbar-->
-    </head>
-    <body id="culture">
-
-
-        <!--Carousel Pictures -->
-            <!--Indicators-->
-            <div id="Carousel" class="carousel slide" data-interval="false">
-                <ol class="carousel-indicators">
-                    <li data-target="#concept" data-slide-to="0" class="active"></li>
-                    <li data-target="#service" data-slide-to="1"></li>
-                    <li data-target="#Sustainable" data-slide-to="2"></li>
-                </ol>
-                <!--slides-->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <a href="#concept"><img src="images/culture/coffeebar_welcome.jpg" width="700px" class="image-responsive welcome" alt="Welcome blue coffee-house"></a>
-                            <div class="view">
-                                <div class="carousel-caption">
-                                   <h1 class="h1-responsive">Learn more about Fresh-oh! culture</h1>
+     
+        </head>
+        <body class="d-flex flex-sm-column flex-md-row text-center">
+            
+               <!-- Navigation & Home page -->
+              
+                <header class="mb-auto">
+                    <!-- Navigation -->
+                    <nav class="navbar  navbar-dark fixed-top">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="index.html"><img width="144" height="auto" class="d-none d-md-block d-lg-none align-baseline" src="/images/logo/final_logo_freshoh_white.png" alt="Freshoh logo"></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse text-sm justify-content-center bg-dark" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="index.html#menu">Menu</a>
+                                <a class="nav-link" href="index.html#aboutus">About us</a>
+                                <a class="nav-link active" aria-current="page" href="/culture.html">Our culture</a>
+                                <a class="nav-link" href="index.html#gallery">Gallery</a>
+                                <a class="nav-link" href="index.html#contact">Contact</a>
+                            
+                                </div> 
+                            </div>
+                        </div>
+                    </nav>
+                    <!--./Navigation -->
+                    
+                
+                </header>   
+                    
+            
+                <main class=" min-vw-100 d-flex mx-auto flex-column">
+                    
+                    <div class="container bg-danger p-4">
+                      <img class="img-fluid w-25" src="images/logo/final_logo_freshoh.png" alt="Freshoh logo">
+                    <!--Section: News of the day-->
+                        <section class="border-bottom pb-4 mb-5">
+                            <div class="row gx-5">
+                            <div class="col-md-6 mb-4">
+                                <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+                                <img src="/images/culture/taylor-hernandez-NK-N6coeI5Y-unsplash.jpg" class="img-fluid" />
+                                <a href="#!">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                </a>
                                 </div>
                             </div>
-                    </div>
-                    <div class="item">
-                        <a href="#service"><img src="images/culture/barista.jpg" class="image-responsive" alt="Barista working"></a>
-                            <div class="view">
-                                <div class="carousel-caption">
-                                    <h1 class="h1-responsive">Fresh-oh! service</h1>
-                                    
-                                </div>
+
+                            <div class="col-md-6 mb-4">
+                                <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3 mt-5">Discover Fresh-oh culture</span>
+                                <h4><strong>Enjoy Quality Freshly-roasted coffee</strong></h4>
+                                <p class="text-white-50">
+                               Coffee connect us. It brings together communities. We provide high quality whole roasted Arabica coffee beans and have them blended and roasted to our specifications to ensure each freshly-brewed cup of coffee, espresso, latte and cappuccino is deliciously satisfying.
+                                </p>
                             </div>
-                    </div>
-                    <div class="item">
-                        <a href="#Sustainable"><img src="images/culture/fresh_veggies.jpg" class="image-responsive" alt="Fresh veggies">
-                        </a>
-                            <div class="view">
-                                <div class="carousel-caption">
-                                    <h1 class="h1-responsive">Sustainability Approach</h1>
-                                </div>
-                            </div>    
-                    </div>
-                </div>
-        
-                <a class="left carousel-control" href="#Carousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="right carousel-control" href="#Carousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
-            </div>
-      
-            
-            <!--/.Carousel Pictures -->
-            <div class="panel-footer text-center">
-                <h3>Follow us</h3>
-                    <!--Facebook-->
-                    <a class="btn-floating btn-lg btn-fb" type="button" role="button" href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-f fa-2x"></i></a>
-                    <!--Twitter-->
-                    <a class="btn-floating btn-lg btn-tw" type="button" role="button" href="https://twitter.com/explore"><i class="fab fa-twitter fa-2x"></i></a>
-                    <!--Instagram-->
-                    <a class="btn-floating btn-lg btn-ins" type="button" role="button" href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram fa-2x"></i></a>
-            </div>
-        <!--Welcome-->    
-        <div class="wrapper"> 
-            <div class="row">
-                <div class="col-xs-12 col-md-12 col-lg-12">
-            
-                <div id="mdb-lightbox-ui"></div>
-                    <div class="mdb-lightbox">
-                        <h2 id="concept">Our concept</h2>
-                        <figure class="col-xs-12 col-md-6 col-lg-4">
-                            <img alt="Working space" src="images/culture/coffeebar_workingspace.jpg"
-                            class="img-responsive">
-                            <h3 class="text-left my-4">Friendly work space</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sint voluptatum quibusdam praesentium sed.
-                                Quia voluptatem repudiandae non cumque sed ullam explicabo harum. Eum, saepe! Iure placeat nihil molestias dolorem?</p>
-                        </a>
-                        </figure>
-                
-                        <figure class="col-xs-12 col-md-6 col-lg-4">
-                            <img alt="Free wifi" src="images/culture/free_wifi.jpg"
-                            class="img-responsive" />
-                            <h3 class="text-left my-3">Free Wifi</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sint voluptatum quibusdam praesentium sed.
-                                Quia voluptatem repudiandae non cumque sed ullam explicabo harum. Eum, saepe! Iure placeat nihil molestias dolorem?</p>
-                        </a>
-                        </figure>
-                
-                        <figure class="col-xs-12 col-md-6 col-lg-4">
-                            <img alt="Cosy coffee-house" src="images/culture/coffeebar_cosy.jpg"
-                            class="img-responsive" />
-                            <h3 class="text-left my-3">Feel at Fresh-home!</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sint voluptatum quibusdam praesentium sed.
-                                Quia voluptatem repudiandae non cumque sed ullam explicabo harum. Eum, saepe! Iure placeat nihil molestias dolorem?</p>
-                        </a>
-                        </figure>
-                
-                    </div>
-                </div>
-            </div>
-        <!--End Welcome section-->
-        <!--Barista section-->    
-            
-            <div class="row">
-                <div class="col-xs-12">
-            
-                <div id="mdb-lightbox-ui"></div>
-                    <div class="mdb-lightbox">
-                        <h2 id="service">Our Fresh-oh! service</h2>
-                        <figure class="col-xs-12 col-md-6 col-lg-4">
-                            <img alt="picture" src="images/culture/baristatraining.jpg"
-                            class="img-responsive" />
-                            <h3 class="text-left my-3">Barista in-house training</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sint voluptatum quibusdam praesentium sed.
-                                Quia voluptatem repudiandae non cumque sed ullam explicabo harum. Eum, saepe! Iure placeat nihil molestias dolorem?</p>
-                        </a>
-                        </figure>
-                
-                        <figure class="col-xs-12 col-md-6 col-lg-4">
-                            <img alt="picture" src="images/culture/barista.jpg"
-                            class="img-responsive" />
-                            <h3 class="text-left my-3">Fresh-oh! service</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sint voluptatum quibusdam praesentium sed.
-                                Quia voluptatem repudiandae non cumque sed ullam explicabo harum. Eum, saepe! Iure placeat nihil molestias dolorem?</p>
-                            </a>
-                        </figure>
-                        
-                        <figure class="col-xs-12 col-md-6 col-lg-4">
-                            <img alt="picture" src="images/culture/coffee-cup-working-happy.jpg"
-                            class="img-responsive" />
-                            <h3 class="text-left my-3">Happy coffee time</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sint voluptatum quibusdam praesentium sed.
-                                Quia voluptatem repudiandae non cumque sed ullam explicabo harum. Eum, saepe! Iure placeat nihil molestias dolorem?</p>
-                        </a>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        <!--End Barista section-->
-        <!--Sustainable section-->
-        <div class="row">
-            <div class="col-xs-12">
-        
-            <div id="mdb-lightbox-ui"></div>
+                            </div>
+                        </section>
+                        <!--Section: Articles-->
+                        <div class="container">
 
-                
+
+
+                            <div class="row">
+                              <div class="col-md-4">
+                                <div class="card">
+                                    <img src="/images/culture/baristatraining.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title text-white-50">Barista training</h5>
+                                      <p class="card-text text-white-50">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/culture/chris-j-davis-hOfDv5sKT3M-unsplash.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title text-white-50">Card title</h5>
+                                      <p class="card-text text-white-50">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/culture/stephanie-morales-CS_2FliSGOE-unsplash.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Happy coffee hour</h5>
+                                      <p class="card-text">Every Tuesday, we offer some free cookies with your coffee. To sweeten your (Tues)day</p>
+                                     
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                            <div class="row">
+                              <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/culture/chris-j-davis-hOfDv5sKT3M-unsplash.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                     
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/culture/chris-j-davis-hOfDv5sKT3M-unsplash.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                     
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/culture/chris-j-davis-hOfDv5sKT3M-unsplash.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                     
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        <!--Section: Content-->
+                      
+                            
+                        </section>
+                        <!--Section: Content-->
+
+                    
+                    </div>
+<!--Main layout-->
+         
         
-                <div class="mdb-lightbox">
-                    <h2 id="Sustainable">Sustainability approach</h2>
-                    <figure class="col-xs-12 col-md-4 col-lg-4">
-                        <img alt="picture" src="images/culture/garden_fresh1.jpg"
-                        class="img-responsive" />
-                        <h3 class="text-left my-3">Fresh-oh! products only</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sint voluptatum quibusdam praesentium sed.
-                            Quia voluptatem repudiandae non cumque sed ullam explicabo harum. Eum, saepe! Iure placeat nihil molestias dolorem?</p>
-                    </a>
-                    </figure>
+        <footer class="bg-footer text-center text-white">
+                    
+        
+                <!-- Section: Social media -->
+                
+                <!-- Facebook -->
+                <a
+                    class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+                    ><i class="fab fa-facebook-f"></i
+                ></a>
             
-                    <figure class="col-xs-12 col-md-6 col-lg-4">
-                        <img alt="picture" src="images/culture/fairtradecoffee.jpg"
-                        class="img-responsive" />
-                        <h3 class="text-left my-3">Fair trade coffee</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sint voluptatum quibusdam praesentium sed.
-                            Quia voluptatem repudiandae non cumque sed ullam explicabo harum. Eum, saepe! Iure placeat nihil molestias dolorem?</p>
-                    </a>
-                    </figure>
+                <!-- Twitter -->
+                <a
+                    class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+                    ><i class="fab fa-twitter"></i
+                ></a>
             
-                    <figure class="col-xs-12 col-md-6 col-lg-4">
-                        <img alt="picture" src="images/culture/baker.jpg"
-                        class="img-responsive" />
-                        <h3 class="text-left my-3">Cook, delicious, Fresh-oh!</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sint voluptatum quibusdam praesentium sed.
-                            Quia voluptatem repudiandae non cumque sed ullam explicabo harum. Eum, saepe! Iure placeat nihil molestias dolorem?</p>
-                    </a>
-                    </figure>
-                </div>   
-                </div>
+                <!-- Google -->
+                <a
+                    class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+                    ><i class="fab fa-google"></i
+                ></a>
+            
+                <!-- Instagram -->
+                <a
+                    class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+                    ><i class="fab fa-instagram"></i
+                ></a>
+            
+                <!-- Linkedin -->
+                <a
+                    class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+                    ><i class="fab fa-linkedin"></i
+                ></a>
+                <!-- Github -->
+                <a
+                    class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+                    ><i class="fab fa-github"></i
+                ></a>
+            
+                <!-- Section: Social media -->
             </div>
-        </div>
-
-        <!--End Sustainable section-->
- 
-     <!-- Footer -->
-    <footer class="page-footer font-small">
-
-      <!-- Footer Links -->
-      <div class="container-fluid text-left text-md-left">
-    
-        <!-- Grid row -->
-        <div class="row">
-    
-          <!-- Grid column -->
-          <div class="col-sm-5">
-    
-            <!-- Content -->
-          
-            <img id="footer-img" src="images/logo/cropped-becode-logo-seal.png" alt="Logo Becode">
-              <ul class="list-unstyled">
-                <h4>Central office</h4>
-                <li><i class="fas fa-map-marker-alt"></i>1252 - North Bend River Road - London</li>
-                <li><i class="fas footer fa-phone"></i>+44-606-877-3753</li>
-                <li><i class="fas footer fa-envelope"></i>contact@freshohlondon.com</li>
-                <li><i class="fas footer fa-clock"></i>Opening hours : Mon - Fri from 9:30am to 8pm</li>
-    
-          </div>
-          <!-- Grid column -->
-    
-          <hr class="clearfix w-100 d-md-none pb-3">
-    
-          <!-- Grid column -->
-          <div class="col-sm-4 mb-md-0 mb-3">
-    
-            <!-- Links -->
-            <h5 class="text-uppercase text-left">Legal info</h5>
-            <ul class="list-unstyled text-left">
-              <li>
-                <a href="#!">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="contact.html">Contact</a>
-              </li>
-              <li>
-                <a href="#">Terms of use</a>
-              </li>
-            </ul>
+            <!-- Grid container -->
+            
             <!-- Copyright -->
-          <div class="footer-copyright text-left"> 
-            <ul class="list-unstyled text-left">
-              <li>Exercice (Swartz 1.3)</li> 
-              <li>© 2020 Copyright: Becode.org</li>
-            </ul>
-          </div>
-      <!-- Copyright -->
-            <!-- Footer Links -->
-    
-          </div>
-
+            <div class="text-center text-white-50 p-2 fs-13">
+                © 2022 Copyright:
+                <a class="text-white-50 " href="https://github.com/KhadijaEK">Khadija El Khadri</a>
+            </div>
         
-          <!-- Grid column -->
-          <!-- Grid column middle-->
-          <div class="col-sm-3 mb-md-0 mb-3">
+            
+        
+        </footer>
+        <!-- Contact page -->
+        <!-- Footer -->
     
-            <!-- Search form -->
-          <div class="sm-form active-cyan active-cyan-2">
-            <h5 class="h3-responsive text-uppercase text-left">Site search</h5>
-            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-          </div>
+    </main>   
+            
 
-  <!-- Search form -->
-          <!-- Grid column -->
-    
-        </div>
-        <!-- Grid row -->
-    
-      </div>
-    </footer>
-    <!--/.Footer -->
-
-
-
-        <!--/.Carousel script-->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script>
-            $("#carousel").carousel();  
-        </script>
+      
     </body>
 </html>
