@@ -16,24 +16,31 @@ $rich-black-fogra-29: rgba(7, 16, 19, 1);
 
 /* colors variables */
 :root{
-    --light-slate-gray: #7a8b99ff;
+   
     --white: #ffffffff;
     --camel: #ba9c60ff;
-    --raisin-black: #232528ff;
+    --camelight: hsl(40, 54%, 48%);
     --rich-black-fogra-29: #071013ff;
+    --rich-black: rgb(0, 0, 0);
+  
     
 }
 
 /* Common */
 
-
 html { 
     font-size: calc(1em + 1vw);
     box-sizing: content-box;
-    height: 100vh;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+   /*  height: 100vh; */
+    
     
 }
+
+body{
+    font-family: 'Brawler', serif;
+    background-color: var(--rich-black);
+}
+ 
 
 .bg-black{
     background-color: var(--rich-black-fogra-29);
@@ -58,23 +65,14 @@ button:focus{
     box-shadow: none !important;
 }
 
-.btn-primary{
-    background-color: var(--camel);
-    border: none;
-}
-.btn-primary:hover{
-    background-color: var(--camel);
-    border: none;
-}
-
-.btn-outline-light{border: 2px solid var(--white);}
+.btn-outline-light{border: 2px solid var(--camelight);}
 
 .btn-outline-light:hover{border-color: var(--camel); background-color: var(--camel); color: var(--white);}
+
 /* Navbar */
 .logo{
     width: 60%;
 }
-
 
 .navbar-nav{
     font-size: 0.7em;  
@@ -88,7 +86,7 @@ button:focus{
 /* Home page Banner */
 
 .parallax-home {
-      background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9) ), url(images/welcome/karl-fredrickson-TYIzeCiZ_60-unsplash.jpg);   
+      background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url(images/welcome/robert-shunev-OmOvMdiaZZ0-unsplash-dark.jpg);   
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
@@ -109,18 +107,21 @@ button:focus{
 /* Menu Page Group-list & Badges*/
 
 .parallax-menu {
-    background: url('/images/menu/menu-background-coffee.png');
-    background-color: var(--raisin-black);
+    background: url('/images/menu/menu-background-coffeecamel.png');
+    background-color: var(--rich-black);
     background-attachment: fixed;
     background-position: left;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 100%;
+   
     
 }
 
 .image-icon{
     width: 20%;
+}
+.image-title{
+    width: 10%;
 }
 
 .list-group-item{
@@ -135,13 +136,14 @@ button:focus{
 .badge {
     color: var(--white);
     vertical-align: middle;
-    font-weight: 100;
+    font-size: 18px;
+ 
 }
 
 
-/* About us / Culture Page --> Carousel*/
+/* About us */
 .parallax-aboutus{
-    background-color: var(--rich-black-fogra-29);
+    background-color: var(--rich-black);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -151,47 +153,43 @@ button:focus{
 }
 
 .box-open-hours{
-   background-color: rgb(0, 0, 0, 0.2) ; 
+    background-color: rgb(0, 0, 0, 0.5) ; 
     border: solid 2px var(--camel);
-
     position: relative;
     z-index: 2;
     transform: translate(45%, -60px); 
 }
 
-/* Responsive */
+/* Culture page --> carousel */
 
-@media only screen and (max-width: 450px) {
-    
-    .logo{
-        width: 100%;
-    }
-    .box-open-hours{
-        width: 100%;
-        transform: translate(0px, 0px);
-        margin-top: 1em;
-    }
-    .parallax-aboutus{
-        height: 100%;
-        margin-bottom: 0px;
-        
-    }
+.parallax-culture-home{
+    background-color: pink;   
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+
 }
 
-/* TABLET VERSION  */
-@media only screen and (max-width: 991.98px) {
-    .box-open-hours{
-        transform: translate(0px, 0px);
-        
-    }
-    .parallax-aboutus{
-        height: 100%;
-        margin-bottom: 0px;
-        
-    }
-  }
+.card{
+    width: 12rem;
+    height: 16rem;
+    margin-bottom: 1em;
+    background-color: var(--rich-black);
+    border: solid 2px var(--camel);
+    border-radius: 0px;
+}
 
+.card-title{
+    font-size: 20px;
+}
 
+.card-img-top{
+    height: 9rem;
+    border-radius: 0px;
+    background-size: cover ;
+}
 
 
 /* Menu Page gallery */
@@ -199,52 +197,27 @@ button:focus{
 .parallax-gallery {
  
     background-blend-mode: saturation;
-    background-color: var(--rich-black-fogra-29);
+    background-color: var(--rich-black);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70%;
+
+}
+
+/* Footer */
+
+.parallax-contact {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url(images/welcome/matt-hoffman-7zwyUZVrt-U-unsplash.jpg);  
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-
-}
-
-
-/* Contact page */
-
-.parallax-contact {
-    background-image: url(images/welcome/matt-hoffman-7zwyUZVrt-U-unsplash.jpg);  
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 75%;
    
 }
 
-.contact-background{
-    background-color: var(--raisin-black);
-}
-
-#contactpage .wrapper {
-    background-image: url(images/culture/coffeebar_workingspace.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 24px;
-    height: 100vh;
-    width: 100%;
-    
-}
-
-
-#contactpage .mb-4 {
-    background-color: rgba(119, 119, 120, 0.8);
-    border-radius: 25px;
-    margin: 50px;
-    padding: 50px;
-    position: relative;
-    top: 20px;
-    width: 100%; 
-}
 
 
 .label {
@@ -263,48 +236,93 @@ button:focus{
 
 
 
-#contactpage .btn:hover{
-    background-color: #00A4D0;
-    border: 5px solid white;
-}
-
-#contactpage .list-unstyled li{
-    color: black;
-}
-
-
 /* Footer */
 
 .fs-13{
     font-size: 13px;
 }
 
-.page-footer{
- 
-    width: 100%;
+.bg-footer{
+    background-color: var(--camel);
+}
+
+footer p{
+   font-weight: 200;
 
 }
 
-footer .row{
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
 
-.footer p{
-   height: 1em;
-   line-height: 30em;
-}
-
-
-#footer-img{
-    display: flex;
-    width: 20%;
-}
 
 .list-unstyled li i{
     padding-left: 20px;
     padding-right: 15px;
 }
+
+
+/*! Responsive */
+
+@media screen and (min-width: 320px) {
+    html {
+      font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+    .list-group-item{
+    
+        font-size: 16px;        
+    }
+    .badge{
+        font-size: 14px;
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    
+
+    .list-group-item{
+    
+        font-size: 16px;        
+    }
+  }
+
+
+@media only screen and (max-width: 450px) {
+    
+    .logo{
+        width: 100%;
+        
+    }
+    .box-open-hours{
+        width: 100%;
+        transform: translate(0px, 0px);
+       
+    }
+    .parallax-aboutus{
+        height: 100%;
+        margin: 0px;
+        
+    }
+
+    .image-title{
+        width: 40%;
+    }
+}
+
+/* TABLET VERSION  */
+@media only screen and (max-width: 991.98px) {
+    .box-open-hours{
+        transform: translate(0px, 0px);
+        
+    }
+    .parallax-aboutus{
+        height: 100%;
+        margin-bottom: 0px;
+        
+    }
+    .image-title{
+        width: 40%;
+    }
+  }
+
+
+
 
 
 
