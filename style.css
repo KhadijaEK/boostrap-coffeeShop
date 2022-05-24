@@ -32,9 +32,11 @@ html {
     font-size: calc(1em + 1vw);
     box-sizing: content-box;
    /*  height: 100vh; */
-    
-    
+  
+    /*For smooth scrolling behavior*/
+    scroll-behavior: smooth;
 }
+
 
 body{
     font-family: 'Brawler', serif;
@@ -42,8 +44,8 @@ body{
 }
  
 
-.bg-black{
-    background-color: var(--rich-black-fogra-29);
+.bg-gold{
+    background-color: var(--camel);
 }
 
 .text-gold{
@@ -83,6 +85,7 @@ button:focus{
 }
 
 
+
 /* Home page Banner */
 
 .parallax-home {
@@ -113,7 +116,7 @@ button:focus{
     background-position: left;
     background-repeat: no-repeat;
     background-size: contain;
-   
+    height: 100%;
     
 }
 
@@ -137,7 +140,7 @@ button:focus{
     color: var(--white);
     vertical-align: middle;
     font-size: 18px;
- 
+    background-color: var(--camel);
 }
 
 
@@ -148,12 +151,12 @@ button:focus{
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 70vw;
+    height: 90vw;
     margin-bottom: -300px;
 }
 
-.box-open-hours{
-    background-color: rgb(0, 0, 0, 0.5) ; 
+.box-transparent-black{
+    background-color: rgb(0, 0, 0, 0.6) ; 
     border: solid 2px var(--camel);
     position: relative;
     z-index: 2;
@@ -173,8 +176,9 @@ button:focus{
 }
 
 .card{
-    width: 12rem;
-    height: 16rem;
+  width: 12rem;
+    height: 16rem; 
+    aspect-ratio: 1 / 1;
     margin-bottom: 1em;
     background-color: var(--rich-black);
     border: solid 2px var(--camel);
@@ -244,7 +248,10 @@ button:focus{
 
 .bg-footer{
     background-color: var(--camel);
-}
+    margin: -20px;
+      
+    }
+
 
 footer p{
    font-weight: 200;
