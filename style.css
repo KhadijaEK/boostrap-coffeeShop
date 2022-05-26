@@ -160,7 +160,7 @@ button:focus{
     border: solid 2px var(--camel);
     position: relative;
     z-index: 2;
-    transform: translate(45%, -60px); 
+    transform: translate(45%, -40px); 
 }
 
 /* Culture page --> carousel */
@@ -176,9 +176,9 @@ button:focus{
 }
 
 .card{
-  width: 12rem;
+    width: auto;
     height: 16rem; 
-    aspect-ratio: 1 / 1;
+    margin: 0.5em;
     margin-bottom: 1em;
     background-color: var(--rich-black);
     border: solid 2px var(--camel);
@@ -190,7 +190,8 @@ button:focus{
 }
 
 .card-img-top{
-    height: 9rem;
+    height: 8rem;
+    aspect-ratio: auto ;
     border-radius: 0px;
     background-size: cover ;
 }
@@ -296,7 +297,7 @@ footer p{
         width: 100%;
         
     }
-    .box-open-hours{
+    .box-transparent-black{
         width: 100%;
         transform: translate(0px, 0px);
        
@@ -314,7 +315,7 @@ footer p{
 
 /* TABLET VERSION  */
 @media only screen and (max-width: 991.98px) {
-    .box-open-hours{
+    .box-transparent-black{
         transform: translate(0px, 0px);
         
     }
