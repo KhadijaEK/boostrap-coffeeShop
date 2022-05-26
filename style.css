@@ -52,6 +52,9 @@ body{
     color: var(--camel);  
 }
 
+.fs-21{
+    font-size: 16px;
+}
 
 p{
     font-size: 13px;
@@ -161,6 +164,7 @@ button:focus{
     position: relative;
     z-index: 2;
     transform: translate(45%, -40px); 
+    
 }
 
 /* Culture page --> carousel */
@@ -176,8 +180,7 @@ button:focus{
 }
 
 .card{
-    width: auto;
-    height: 16rem; 
+    
     margin: 0.5em;
     margin-bottom: 1em;
     background-color: var(--rich-black);
@@ -190,11 +193,9 @@ button:focus{
 }
 
 .card-img-top{
-    height: 8rem;
-    aspect-ratio: auto ;
     border-radius: 0px;
-    background-size: cover ;
-}
+    max-height :50%;
+} 
 
 
 /* Menu Page gallery */
