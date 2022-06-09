@@ -12,7 +12,7 @@ I redesigned an old website made in Bootstrap v.3 and upgraded it in Bootstrap v
 
 ## About
 
-![]()
+![Alt text](https://github.com/KhadijaEK/boostrap-coffeeShop/blob/main/images/readme/landpage.png)
 
 This is a sample project creating a simple dark theme website with parallax effect, using default Boostrap components and styles, and CSS. It contains an index file that is the main page structure, a culture file and a style css file that modifies the layout of some aspects in the index file when adjustments were necessary.
 
